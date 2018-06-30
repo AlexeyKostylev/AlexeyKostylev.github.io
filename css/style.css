@@ -5,10 +5,7 @@ body   {
 }
 @font-face{
     font-family: 'Roboto';
-    src: url(../fonts/Roboto-Black.ttf);
     src: url(../fonts/Roboto-Regular.ttf)
-
-
 }
 .wrapper {
     display: flex;
@@ -272,3 +269,6 @@ body   {
 }
 
 
+@media (max-width:768px) {
+    background: none;
+}
