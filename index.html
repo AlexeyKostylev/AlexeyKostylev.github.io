@@ -16,6 +16,7 @@
 
 		<!-- Подключаем наш файл со стилями, который находится в папке css-->
 		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/animated.css">
 </head>
 
 <body>
@@ -24,11 +25,11 @@
 	<div class="header">
 		<div class="logo"><img src="img/logo.png" alt=""></div>
 		<div class="site_info">
-			<div class="info">Веб разработчик</div>
-			<div class="header_name">Костылев Алексей</div>
-			<div class="job">Разработка и верстка сайтов на CSS и HTML</div>
-			<div class="button"><a href="">	Связаться</a></div>	
-			<div class="under_button_text"><h3>*Это бесплатно</h3></div>
+			<div class="info animated bounceInRight">Веб разработчик</div>
+			<div class="header_name wow bounceInRight" data-wow-delay="0.1s">Костылев Алексей</div>
+			<div class="job wow bounceInRight" data-wow-delay="0.12s">Разработка и верстка сайтов на CSS и HTML</div>
+			<div class="button wow bounceInRight" data-wow-delay="0.8s"><a href="">	Связаться</a></div>	
+			<div class="under_button_text wow bounceInRight" data-wow-delay="0.8s"><h3>*Это бесплатно</h3></div>
 		</div>
 	</div>
 	<div class="content">
@@ -58,7 +59,7 @@
 			<div class="name">Костылев Алексей</div>
 			<div class="my_job">Разработка сайтов под ключ</div>
 		</div>
-		<div class="social_block">
+		<div class="social_block wow bounceInUp" data-wow-delay="0.1s">
 			<div class="read_us">Подпишитесь:</div>
 			<div class="social">
 					<div class="ico"><a href="#"><img src="img/facebook-logo-button.png" alt=""></a></div>
@@ -67,12 +68,15 @@
 					<div class="ico"><a href="#"><img src="img/youtube-symbol.png" alt=""></a></div>	
 			</div>
 		</div>
-		<div class="write_me">
+		<div class="write_me wow bounceInUp" data-wow-delay="0.4s">
 			<div class="write_me_title">Напишите мне:</div>
 			<div class="write_me_button">Написать</div>
 		</div>
 	</div>
 </div>
-
+<script src="js/wow.min.js"></script>
+<script>
+	new WOW().init();
+</script>
 </body>
 </html>
