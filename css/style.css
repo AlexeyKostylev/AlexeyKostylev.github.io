@@ -334,11 +334,19 @@ body   {
         flex-direction: column;
         padding: 0 20px; 
     }
+    .content {
+        width: 90%;
+    }
     .content_1 {
         width: 100%;
+        margin: 0;
     }
     .content_2 {
         width: 100%;
+        margin: 0;
+    }
+    .content_text {
+        padding: 5px;
     }
     .name {
         color: #fefefe;
@@ -351,7 +359,7 @@ body   {
         justify-content: space-around;
     }
 }
-@media (max-width:850px) {
+@media (max-width:550px) {
     .about_me {
         display: none;
     }
