@@ -317,9 +317,9 @@ body   {
         width: 300px;
     } 
     .site_info {
+        margin-top: 10px;
         justify-content: center;
         align-items: center;
-        margin-top: 50px;
     }
     .header {
         height: 300px;
