@@ -331,7 +331,8 @@ body   {
         line-height: 36.81px;
     }
     .content_text {
-        flex-direction: column; 
+        flex-direction: column;
+        padding: 0 20px; 
     }
     .content_1 {
         width: 100%;
