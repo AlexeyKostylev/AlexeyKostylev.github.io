@@ -24,8 +24,11 @@ body   {
 }
 .logo {
     margin-top: 50px;
-	background: url(../img/logo.png) repeat-x;
-	background-size: 600px;
+	/* background: url(../img/logo.png) repeat-x; */
+	/* background-size: 600px; */
+    width: 600px;
+}
+.logo img {
     width: 600px;
 }
 .site_info {
@@ -44,9 +47,8 @@ body   {
 }
 .header_name {
     padding-top: 21px;
-    height: 45px;
+    /* height: 45px; */
     color: #ffffff;
-
     font-size: 48px;
     font-weight: 700;
     line-height: 36.81px;
@@ -56,7 +58,6 @@ body   {
     width: 243px;
     height: 39px;
     color: #ffffff;
-
     font-size: 18px;
     font-weight: 400;
 }
@@ -97,10 +98,8 @@ body   {
     display: flex;
     flex-direction: column;
     background: #fff;
-    width: 1047px;
-    display: flex;
+    width: 80%;
     margin: 46px auto;
-  
     justify-content: center;
 }
 .content_header {
@@ -108,7 +107,6 @@ body   {
     text-align: center;
 }
 .content_header_text1 {
-    /* width: 125px; */
     height: 15px;
     color: #072b6f;
     font-family: Roboto;
@@ -118,7 +116,6 @@ body   {
     letter-spacing: 1.8px;
 }
 .content_header_text2 {
-    /* width: 78px; */
     padding: 10px 0 30px 0;
     height: 14px;
     color: #7bb9ff;
@@ -135,18 +132,15 @@ body   {
     display: flex;
     flex-direction: column;
     margin-right: 8px; 
-    width: 460px; 
+    width: 50%; 
 }
-.img1 {  
-    background-image: url(../img/portfolio_img1.jpg);
-    background-size: 460px;
-    width: 460px;
-    height: 202px;
+.img1 img {  
+    width: 100%;
 }
 .text_article {
     padding: 10px 0;;
-    width: 421px;
-    height: 18px;
+    /* width: 421px; */
+    /* height: 18px; */
     color: #072b6f;
     font-family: Roboto;
     font-size: 16px;
@@ -154,8 +148,8 @@ body   {
     text-transform: uppercase;
 }
 .text {
-    width: 432px;
-    height: 65px;
+    /* width: 432px; */
+    /* height: 65px; */
     color: #8f8f8f;
     font-family: Roboto;
     font-size: 14px;
@@ -175,13 +169,11 @@ body   {
     display: flex;
     flex-direction: column;
     margin-left: 8px; 
-    width: 460px; 
+    width: 50%; 
 }
-.img2 {  
-    background-image: url(../img/portfolio_img2.jpg);
-    background-size: 460px;
-    width: 460px;
-    height: 202px;
+.img2 img {  
+    width: 100%;
+    
 }
 .footer {
     height: 250px;
@@ -194,15 +186,15 @@ body   {
 }
 .up_button {
     position: fixed;
-    /* position: absolute; */
-    right:120px;
-    /* top:-50px; */
+    right:1px;
     bottom: 10px;
 }
 .up_button :hover {
     cursor: pointer;
 }
 .about_me {
+    padding-left: 10px;
+    padding-right: 10px;
     padding-top: 75px;
     text-align: left;
     width: 20%;
@@ -222,16 +214,17 @@ body   {
     line-height: 40px;
 }
 .social_block {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 75px;
     width: 20%;
 }
 .social {
-    /* width: 240px; */
     justify-content: center;
     display: flex;
 }
 .ico {
     padding:0 10px;
-    
 }
 .ico img {
     width: 40px;
@@ -239,7 +232,7 @@ body   {
 }
 .read_us {
     text-align: center;
-    padding-top: 75px;
+    
     color: #deedfe;
     font-family: Roboto;
     font-size: 18px;
@@ -249,9 +242,11 @@ body   {
 .write_me {
     text-align: center;
     width: 20%;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 75px;
 }
 .write_me_title {
-    padding-top: 75px;
     color: #deedfe;
     font-family: Roboto;
     font-size: 18px;
@@ -270,5 +265,105 @@ body   {
 
 
 @media (max-width:768px) {
-    background: none;
+    .logo {
+        display: none;
+    }
+    
+}
+
+@media (max-width:1100px) {
+    .logo img {
+        width: 500px;
+    } 
+    .logo {
+        width: 500px;
+    } 
+    .about_me {
+        padding-top: 10px;
+    }
+    .social_block {
+        padding-top: 10px;
+    }
+    .write_me {
+        padding-top: 10px;
+    }
+    .footer {
+       height: 150px;
+       min-height: 150px;
+    }
+    .my_job {
+        color: #deedfe;
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: 200;
+        line-height: 20px;
+    }
+    .ico img {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media (max-width:960px) {
+    .logo {
+        width: 400px;
+    } 
+}
+@media (max-width:850px) {
+    .logo img {
+        width: 300px;
+    } 
+    .logo {
+        width: 300px;
+    } 
+    .site_info {
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+    }
+    .header {
+        height: 300px;
+    }
+    .header_name {
+        padding-top: 21px;        
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 36.81px;
+    }
+    .content_text {
+        flex-direction: column; 
+    }
+    .content_1 {
+        width: 100%;
+    }
+    .content_2 {
+        width: 100%;
+    }
+    .name {
+        color: #fefefe;
+        font-family: Roboto;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 30px;
+    }
+    .footer {
+        justify-content: space-around;
+    }
+}
+@media (max-width:850px) {
+    .about_me {
+        display: none;
+    }
+    .footer {
+        justify-content: center;
+    }
+    .up_button {
+        display: none;
+    }
+    .social_block {
+        width: 50%;
+    }
+    .write_me {
+        width: 50%;
+    }
 }
